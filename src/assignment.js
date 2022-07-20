@@ -41,6 +41,7 @@ console.log(sumOfNumbers(array))
 
 // console.log(assignSum(arr));
 
+ let arrayNumbers = [1,2,3,4,5,6]
 function countEvenNumbers(arrayOfNumbers) {
     let count = 0;
     for (let i = 0; i < arrayOfNumbers.length; i++) {
@@ -50,7 +51,9 @@ function countEvenNumbers(arrayOfNumbers) {
     }
     return count;
 }
+countEvenNumbers(arrayNumbers)
 
+ console.log(countEvenNumbers(arrayNumbers))
 
 // function countEvenNumbers(array){
   
