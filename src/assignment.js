@@ -16,11 +16,18 @@ const assignment = {};
 let array = [1,2,3,4,5,6,7,8,9]
 
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.reduce((accumulator, number) => accumulator += number, 0)
+   
+  let sum = 0
+  for (let i = 0; i < arrayOfNumbers.length; i++)  
+    sum += arrayOfNumbers[i];  
+     
+  return sum;
 }
 sumOfNumbers(array)
 
 console.log(sumOfNumbers(array))
+
+assignment.sumOfNumbers = sumOfNumbers;
 
 
 
@@ -36,7 +43,7 @@ console.log(sumOfNumbers(array))
 
 // console.log(assignSum(arr));
 
- let arrayNumbers = [1,2,3,4,5,6]
+ 
 function countEvenNumbers(arrayOfNumbers) {
     let count = 0;
     for (let i = 0; i < arrayOfNumbers.length; i++) {
@@ -46,9 +53,9 @@ function countEvenNumbers(arrayOfNumbers) {
     }
     return count;
 }
-countEvenNumbers(arrayNumbers)
+ 
+assignment.countEvenNumbers = countEvenNumbers;
 
- console.log(countEvenNumbers(arrayNumbers))
 
 // function countEvenNumbers(array){
   
