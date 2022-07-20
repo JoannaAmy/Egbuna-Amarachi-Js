@@ -41,22 +41,28 @@ console.log(sumOfNumbers(array))
 
 // console.log(assignSum(arr));
 
- let arrayNumbers = [1,2,3,4,5,6]
-
-function countEvenNumbers(array){
-  
-var count = 0;
- 
-  for ( var i = 0; i<array.length; i++ ){ 
-    if (array[i] % 2 == 0){
-      count++;
+function countEvenNumbers(arrayOfNumbers) {
+    let count = 0;
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        if (arrayOfNumbers[i] % 2 === 0) {
+            count++;
+        }
     }
-  }
-  return count;
+    return count;
 }
-countEvenNumbers(arrayNumbers)
 
- console.log(countEvenNumbers(arrayNumbers))
+
+// function countEvenNumbers(array){
+  
+// var count = 0;
+ 
+//   for ( var i = 0; i<array.length; i++ ){ 
+//     if (array[i] % 2 == 0){
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
 
       
