@@ -43,16 +43,11 @@ const assignment = {};
 
  let arrayNumbers = [1,2,3,4,5]
 
-function countEvenNumbers(array){
+function countEvenNumbers(arrayOfNumbers){ 
   
-var count = 0;
- 
-  for ( var i = 0; i<array.length; i++ ){ 
-    if (array[i] % 2 == 0){
-      count++;
-    }
-  }
-  return count;
+const evenNumbers = arrayOfNumbers.filter (even => even%2 === 0 )
+  
+return evenNumbers.length
 }
 countEvenNumbers(arrayNumbers)
 
