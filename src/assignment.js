@@ -41,13 +41,18 @@ console.log(sumOfNumbers(array))
 
 // console.log(assignSum(arr));
 
- let arrayNumbers = [1,2,3,4,5]
+ let arrayNumbers = [1,2,3,4,5,6]
 
-function countEvenNumbers(arrayOfNumbers){ 
+function countEvenNumbers(array){
   
-const evenNumbers = arrayOfNumbers.filter (even => even%2 === 0 )
-  
-return evenNumbers.length
+var count = 0;
+ 
+  for ( var i = 0; i<array.length; i++ ){ 
+    if (array[i] % 2 == 0){
+      count++;
+    }
+  }
+  return count;
 }
 countEvenNumbers(arrayNumbers)
 
