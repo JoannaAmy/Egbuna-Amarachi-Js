@@ -13,19 +13,19 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-// let array = [1,2,3,4,5,6,7,8,9]
+let array = [1,2,3,4,5,6,7,8,9]
 
-// function sumOfNumbers(arrayOfNumbers) {
+function sumOfNumbers(arrayOfNumbers) {
    
-//   let sum = 0
-//   for (let i = 0; i < arrayOfNumbers.length; i++)  
-//     sum += arrayOfNumbers[i];  
+  let sum = 0
+  for (let i = 0; i < arrayOfNumbers.length; i++)  
+    sum += arrayOfNumbers[i];  
      
-//   return sum;
-// }
-// sumOfNumbers(array)
+  return sum;
+}
+sumOfNumbers(array)
 
-// console.log(sumOfNumbers(array))
+console.log(sumOfNumbers(array))
 
 
 
